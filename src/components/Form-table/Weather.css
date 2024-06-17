@@ -1,0 +1,199 @@
+/* Weather.css */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .input-srch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-srch input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  .input-srch img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #e74c3c; /* Changed background color */
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-srch img:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  .sunimages {
+    margin: 20px 0;
+  }
+  
+  .sunimages img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .ceisuis-city {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .ceisuis-city p:first-child {
+    font-size: 56px;
+    margin: 5px 0;
+  }
+  
+  .ceisuis-city p:last-child {
+    font-size: 28px;
+    margin: 5px 0;
+  }
+  
+  .hum-windspeed {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .col-humadity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .col-humadity img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .col-humadity p {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  
+  .col-humadity span {
+    font-size: 16px;
+    color: #bdc3c7;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .weather {
+      padding: 10px;
+    }
+  
+    .input-srch input {
+      font-size: 14px;
+    }
+  
+    .input-srch img {
+      width: 35px;
+    }
+  
+    .sunimages img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .ceisuis-city p:first-child {
+      font-size: 44px;
+    }
+  
+    .ceisuis-city p:last-child {
+      font-size: 22px;
+    }
+  
+    .col-humadity img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .col-humadity p {
+      font-size: 18px;
+    }
+  
+    .col-humadity span {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input-srch input {
+      font-size: 12px;
+    }
+  
+
+    .sunimages img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .ceisuis-city p:first-child {
+      font-size: 32px;
+    }
+  
+    .ceisuis-city p:last-child {
+      font-size: 18px;
+    }
+  
+    .col-humadity img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .col-humadity p {
+      font-size: 16px;
+    }
+  
+    .col-humadity span {
+      font-size: 12px;
+    }
+  }
+  
