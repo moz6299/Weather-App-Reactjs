@@ -1,5 +1,5 @@
 {
-  "name": "form-filter-app-reactjs",
+  "name": "weather-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
+  "homepage": "https://your-username.github.io/weather-app", // Replace with your GitHub Pages URL
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
